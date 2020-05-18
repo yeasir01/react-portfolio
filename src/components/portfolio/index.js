@@ -1,10 +1,14 @@
 import React from 'react';
+import './style.css';
+import Carousel from './carousel'
 
 function Portfolio() {
   return (
-    <>
-      <h1>This is the Portfolio Section</h1>
-    </>
+    <div id="portfolio">
+      <div className="container min-vh-100 d-flex align-items-center">
+        <Carousel />
+      </div>
+    </div>
   );
 }
 
