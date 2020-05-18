@@ -1,0 +1,28 @@
+.tech-icons i{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.fa-html5 {
+    color: #0170ba;
+}
+
+.fa-css3-alt {
+    color: #e44d26;
+}
+
+.fa-bootstrap{
+    color: #553a7d;
+}
+
+.fa-js{
+    color: #ffde00;
+}
+
+.fa-cog{
+    color: #4588c7;
+}
+
+.fa-node-js{
+    color: #80bd01;
+}
