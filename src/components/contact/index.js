@@ -34,7 +34,7 @@ function Contact() {
               <select id="inputState" className="form-control rounded-0">
                 <option defaultValue>Select a topic...</option>
                 <option>Web Development</option>
-                <option>For Hire</option>
+                <option>Other</option>
               </select>
             </div>
           </div>

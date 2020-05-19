@@ -1,7 +1,8 @@
 .scroll-nav {
     background-color: #fff;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
-    height: 60px;
+    border-bottom: 1px solid #d1d1d1;
+    animation: fadeInDownBig;
+    animation-duration: 950ms;
 }
 
 .nav-link {
@@ -16,4 +17,14 @@
 .navbar-brand {
     font-size: 2rem;
     padding-top: 0;
+}
+
+@media only screen and (max-width: 990px) {
+    #navbarNav {
+        text-align: center;
+        background-color: #fff;
+        padding: 0 0;
+        margin: 15px 0;
+        border-radius: 6px;
+    }
 }
