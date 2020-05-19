@@ -4,11 +4,14 @@ import Carousel from './carousel'
 
 function Portfolio() {
   return (
-    <div id="portfolio">
-      <div className="container min-vh-100 d-flex align-items-center">
-        <Carousel />
+    <>
+      <div id="portfolio" className="anchor"></div>
+      <div className="min-vh-100 d-flex align-items-center portfolio">
+        <div className="container ">
+          <Carousel />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

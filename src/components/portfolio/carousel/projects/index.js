@@ -11,18 +11,20 @@ function Projects(){
     <>
         <div className="row item">
             <div className="col-md-6 col-sm-12">
-                <img className="img-fluid" src={weatherImg} alt="weather app" />
+                <div className="container">
+                    <img className="img-fluid shadow-sm" src={weatherImg} alt="weather app" />
+                </div>
             </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-md-6 col-sm-12 mt-small mt-md-0">
                 <div className="container">
                     <div><h1 className="d-none d-md-block">Weather Dashboard</h1></div>
                     <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas placeat laboriosam impedit praesentium numquam magnam. Error, porro similique. Nisi aperiam deserunt maiores quaerat at doloremque voluptas incidunt atque. Ullam?</p></div>
                     <div className="tech-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-bootstrap"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fas fa-cog"></i>
+                        <i className="fab fa-html5"></i>
+                        <i className="fab fa-css3-alt"></i>
+                        <i className="fab fa-bootstrap"></i>
+                        <i className="fab fa-js"></i>
+                        <i className="fas fa-cog"></i>
                     </div>
                     <div className="mt-4 d-flex">
                         <a href="https://github.com/yeasir01/weather-dashboard" 
@@ -39,16 +41,18 @@ function Projects(){
 
         <div className="row item">
             <div className="col-md-6 col-sm-12">
-                <img className="img-fluid" src={quizImg} alt="quiz app" />
+                <div className="container">
+                    <img className="img-fluid shadow-sm" src={quizImg} alt="quiz app" />
+                </div>
             </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-md-6 col-sm-12 mt-small mt-md-0">
                 <div className="container">
                     <div><h1 className="d-none d-md-block">Triva Quiz</h1></div>
                     <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas placeat laboriosam impedit praesentium numquam magnam. Error, porro similique. Nisi aperiam deserunt maiores quaerat at doloremque voluptas incidunt atque. Ullam?</p></div>
                     <div className="tech-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
+                        <i className="fab fa-html5"></i>
+                        <i className="fab fa-css3-alt"></i>
+                        <i className="fab fa-js"></i>
                     </div>
                     <div className="mt-4 d-flex">
                         <a href="https://github.com/yeasir01/timed-quiz" 
@@ -65,16 +69,18 @@ function Projects(){
 
         <div className="row item">
             <div className="col-md-6 col-sm-12">
-                <img className="img-fluid" src={passGenImg} alt="weather app" />
+                <div className="container">
+                    <img className="img-fluid shadow-sm" src={passGenImg} alt="weather app" />
+                </div>
             </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-md-6 col-sm-12 mt-small mt-md-0">
                 <div className="container">
                     <div><h1 className="d-none d-md-block">Password Generator</h1></div>
                     <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas placeat laboriosam impedit praesentium numquam magnam. Error, porro similique. Nisi aperiam deserunt maiores quaerat at doloremque voluptas incidunt atque. Ullam?</p></div>
                     <div className="tech-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
+                        <i className="fab fa-html5"></i>
+                        <i className="fab fa-css3-alt"></i>
+                        <i className="fab fa-js"></i>
                     </div>
                     <div className="mt-4 d-flex">
                         <a href="https://github.com/yeasir01/password-generator" 
@@ -91,18 +97,20 @@ function Projects(){
 
         <div className="row item">
             <div className="col-md-6 col-sm-12">
-                <img className="img-fluid" src={jsSchdImg} alt="employee scheduler app" />
+                <div className="container">
+                    <img className="img-fluid shadow-sm" src={jsSchdImg} alt="employee scheduler app" />
+                </div>
             </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-md-6 col-sm-12 mt-small mt-md-0">
                 <div className="container">
                     <div><h1 className="d-none d-md-block">JS Scheduler</h1></div>
                     <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas placeat laboriosam impedit praesentium numquam magnam. Error, porro similique. Nisi aperiam deserunt maiores quaerat at doloremque voluptas incidunt atque. Ullam?</p></div>
                     <div className="tech-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fas fa-database"></i>
+                        <i className="fab fa-html5"></i>
+                        <i className="fab fa-css3-alt"></i>
+                        <i className="fab fa-js"></i>
+                        <i className="fab fa-node-js"></i>
+                        <i className="fas fa-database"></i>
                     </div>
                     <div className="mt-4 d-flex">
                         <a href="https://github.com/thebigdeal916/project-2" 
@@ -119,17 +127,19 @@ function Projects(){
 
         <div className="row item">
             <div className="col-md-6 col-sm-12">
-                <img className="img-fluid" src={safetyGuruImg} alt="safety guru app" />
+                <div className="container">
+                    <img className="img-fluid shadow-sm" src={safetyGuruImg} alt="safety guru app" />
+                </div>
             </div>
-            <div className="col-md-6 col-sm-12">
+            <div className="col-md-6 col-sm-12 mt-small mt-md-0">
                 <div className="container">
                     <div><h1 className="d-none d-md-block">Safety Guru</h1></div>
                     <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas placeat laboriosam impedit praesentium numquam magnam. Error, porro similique. Nisi aperiam deserunt maiores quaerat at doloremque voluptas incidunt atque. Ullam?</p></div>
                     <div className="tech-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fas fa-cog"></i>
+                        <i className="fab fa-html5"></i>
+                        <i className="fab fa-css3-alt"></i>
+                        <i className="fab fa-js"></i>
+                        <i className="fas fa-cog"></i>
                     </div>
                     <div className="mt-4 d-flex">
                         <a href="https://github.com/yeasir01/safety-guru" 

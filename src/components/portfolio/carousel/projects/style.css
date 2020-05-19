@@ -26,3 +26,15 @@
 .fa-node-js{
     color: #80bd01;
 }
+
+.owl-dots {
+    padding: 1.5rem 0;
+}
+
+.owl-carousel span {
+    background: rgb(170, 170, 170) !important;
+}
+
+.owl-carousel .active span {
+    background: #1dceaa !important;
+}

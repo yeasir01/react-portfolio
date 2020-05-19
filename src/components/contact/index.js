@@ -2,7 +2,9 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div id="contact" className="min-vh-100 d-flex">
+    <>
+    <div id="contact" className="anchor"></div>
+    <div className="min-vh-100 d-flex">
       <div className="container align-self-center">
         
         <div className="row my-3">
@@ -46,6 +48,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    </>
   );
 }
 

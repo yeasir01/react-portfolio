@@ -9,6 +9,11 @@ body {
     color: #1c1c1c;
 }
 
+.anchor {
+    height: 10px;
+    visibility: hidden;
+}
+
 .btn {
     background-color: #16a085;
     color: #fff;
@@ -17,4 +22,17 @@ body {
 
 .btn:hover {
     background-color: #1dceaa;
+}
+
+@media only screen and (max-width: 766px) {
+    .mt-small {
+        margin-top: 1rem;
+    }
+    .mb-small {
+        margin-bottom: 1rem;
+    }
+    .anchor {
+        height: 30px;
+        visibility: hidden;
+    }
 }
