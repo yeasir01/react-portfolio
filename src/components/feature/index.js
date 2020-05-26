@@ -12,10 +12,10 @@ function Feature() {
                         <p className="text-uppercase mb-1">Hey there!</p>
                         <h2 className="text-uppercase mb-1">I'm yeasir</h2>
                         <p className="text-uppercase mb-4">A Full Stack Web Developer</p>
-                        <a className="btn btn-outline-dark rounded-sm text-uppercase px-4 py-2 animate__animated animate__zoomIn
-                            animate__delay-1s" href="#portfolio"
-                            role="button">view work
-                        </a>
+                        <a className="btn btn-outline-dark rounded-sm text-uppercase px-4 py-2 animate__animated
+                        animate__fadeInRightBig
+
+                        " href="#portfolio" role="button">view work</a>
                     </div>
                 </div>
                 <div className="col-md-6 text-right my-auto pt-5 d-none d-md-block">
