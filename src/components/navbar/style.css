@@ -1,8 +1,9 @@
 .scroll-nav {
     background-color: #fff;
-    border-bottom: 1px solid #d1d1d1;
+    
     animation: fadeInDownBig;
     animation-duration: 300ms;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 
 .nav-link {

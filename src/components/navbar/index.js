@@ -11,7 +11,7 @@ function Feature() {
   return (
     <>
       <header>
-        <nav id="navbar" className="fixed-top navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown">
+        <nav id="navbar" className="fixed-top navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown animate__faster">
             <div className="container-fluid px-4">
                 <a className="navbar-brand" href="index.html">
                     <img src={logo} width="36" height="40" alt="code logo"/>
