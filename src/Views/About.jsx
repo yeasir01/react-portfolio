@@ -1,10 +1,9 @@
 import React from 'react';
-import './style.css';
 
-function About() {
-  return (
-    <>
-        <div id="about" className="anchor"></div>
+export default function About() {
+    return (
+        <>
+            <div id="about" className="anchor"></div>
             <div className="min-vh-100 my-5">
                 <div className="container">
                     <div className="row min-vh-100">
@@ -28,14 +27,12 @@ function About() {
                                 software and applications that could be used for my current and future business
                                 opportunities.</p>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/yeasir01"><i
-                                    className="fab fa-github so-icon text-dark"></i></a>
+                                className="fab fa-github so-icon text-dark"></i></a>
                             <a href="#1"><i className="fab fa-linkedin so-icon text-dark"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-    </>
-  );
-}
-
-export default About;
+        </>
+    );
+};

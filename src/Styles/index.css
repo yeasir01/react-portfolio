@@ -1,0 +1,163 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: #1c1c1c;
+}
+
+.scroll-nav {
+    background-color: #fff;
+    
+    animation: fadeInDownBig;
+    animation-duration: 300ms;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #1abc9c;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    padding-top: 0;
+}
+
+.landing-content p {
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.25rem;
+}
+
+.landing-content h2 {
+    font-size: 4.3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.landing-content a {
+    font-size: 1.20rem;
+}
+
+.bg-hero {
+    background-color: #dbdddd;
+}
+
+.anchor {
+    height: 0;
+    visibility: hidden;
+}
+
+.btn {
+    background-color: #16a085;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #1dceaa;
+}
+
+.about-cir {
+    width: 12rem;
+    height: 12rem;
+    background-color: #16a085;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-cir h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.so-icon {
+    font-size: 2.1rem;
+    margin-right: 10px;
+    color: #95a5a6 !important;
+}
+
+.so-icon:hover {
+    color: #1dceaa !important;
+}
+
+.portfolio {
+    background-color: #e4e4e4;
+    padding: 0px 0;
+}
+
+.tech-icons i{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.fa-html5 {
+    color: #0170ba;
+}
+
+.fa-css3-alt {
+    color: #e44d26;
+}
+
+.fa-bootstrap{
+    color: #553a7d;
+}
+
+.fa-js{
+    color: #ffde00;
+}
+
+.fa-cog{
+    color: #4588c7;
+}
+
+.fa-node-js{
+    color: #80bd01;
+}
+
+.owl-dots {
+    padding: 1.5rem 0;
+}
+
+.owl-carousel span {
+    background: rgb(170, 170, 170) !important;
+}
+
+.owl-carousel .active span {
+    background: #1dceaa !important;
+}
+
+
+@media only screen and (max-width: 990px) {
+    #navbarNav {
+        text-align: center;
+        background-color: #fff;
+        padding: 0 0;
+        margin: 15px 0;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .mt-small {
+        margin-top: 1rem;
+    }
+    .mb-small {
+        margin-bottom: 1rem;
+    }
+    .anchor {
+        height: 50px;
+        visibility: hidden;
+    }
+}
