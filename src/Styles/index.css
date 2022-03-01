@@ -83,12 +83,20 @@ body {
 
 .so-icon {
     font-size: 2.1rem;
-    margin-right: 10px;
-    color: #95a5a6 !important;
+    margin-right: 15px;
+    color: #95a5a6;
 }
 
-.so-icon:hover {
-    color: #1dceaa !important;
+.fa-stack-overflow {
+    color: #EF8236;
+}
+
+.fa-linkedin {
+    color: #0E76A8;
+}
+
+.fa-github {
+    color: #333;
 }
 
 .portfolio {
@@ -141,6 +149,9 @@ body {
     background: #1dceaa !important;
 }
 
+.form-group > label {
+    margin-bottom: 5px;
+}
 
 @media only screen and (max-width: 990px) {
     #navbarNav {

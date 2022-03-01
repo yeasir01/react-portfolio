@@ -26,9 +26,15 @@ export default function About() {
                                 I am now focusing on learning code, so that I may use those skills to develop custom
                                 software and applications that could be used for my current and future business
                                 opportunities.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/yeasir01"><i
-                                className="fab fa-github so-icon text-dark"></i></a>
-                            <a href="#1"><i className="fab fa-linkedin so-icon text-dark"></i></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/yeasir01">
+                                <i className="fab fa-github so-icon"></i>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yeasirhugais/">
+                                <i className="fab fa-linkedin so-icon"></i>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/12330004/yeasir01">
+                                <i className="fab fa-stack-overflow so-icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

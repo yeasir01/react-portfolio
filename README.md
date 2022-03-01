@@ -23,8 +23,7 @@ or Run from browser by clicking link below.
 * Complete a small writeup for each project in the portfolio carousel
 * Add a section for technology stacks i'm familiar with
 * Convert from css smooth scroll to JS for better compatibility
-## Testing
-* Fully Responsive on IOS, Chrome & Edge
+
 ## Demo
 [https://yeasir01.github.io/react-portfolio/](https://yeasir01.github.io/react-portfolio/)
 ## License

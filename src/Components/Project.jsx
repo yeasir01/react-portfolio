@@ -2,7 +2,6 @@ import React from 'react';
 import weatherImg from '../Assets/img/weather-api.png';
 import quizImg from '../Assets/img/trivia_quiz.png';
 import passGenImg from '../Assets/img/password-gen.png';
-import safetyGuruImg from '../Assets/img/safety-guru.png';
 import trvCli from '../Assets/img/trivia-cli.png';
 
 export default function Project() {
@@ -25,7 +24,7 @@ export default function Project() {
         description: `A simple time based trivia quiz that utilizes the power of CSS grid box. The player 
         will be asked a series of multiple choice questions. If the player answerers incorrectly or skips 
         ahead they will lose 15sec with no more time on the clock its game over. Answer correct and move forward. 
-        Scores are based on how quickly you answer and how much time was left on the clock`,
+        Scores are based on how quickly you answer and how much time was left on the clock.`,
         liveLink: "https://yeasir01.github.io/timed-quiz/",
         repoLink: "https://github.com/yeasir01/timed-quiz",
         techStack: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"]
@@ -37,14 +36,6 @@ export default function Project() {
         liveLink: "https://yeasir01.github.io/password-generator/",
         repoLink: "https://github.com/yeasir01/password-generator",
         techStack: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"]
-    },{
-        img: safetyGuruImg,
-        imgDes: "safety guru app",
-        title: "Safety Guru",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas placeat laboriosam impedit praesentium numquam magnam. Error, porro similique. Nisi aperiam deserunt maiores quaerat at doloremque voluptas incidunt atque. Ullam?",
-        liveLink: "https://yeasir01.github.io/safety-guru/",
-        repoLink: "https://github.com/yeasir01/safety-guru",
-        techStack: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fas fa-cog"]
     },{
         img: trvCli,
         imgDes: "safety guru app",

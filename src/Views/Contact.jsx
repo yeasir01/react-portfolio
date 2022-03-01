@@ -70,42 +70,41 @@ export default function Contact() {
       <div id="contact" className="anchor"></div>
       <div className="min-vh-100 d-flex">
         <div className="container align-self-center">
-
-          <div className="row my-3">
+          <div className="row">
             <div className="col-12">
-              <h2>Contact Me</h2>
+              <h3>Lets Talk</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <p className='text-secondary'>Looking for help with your project or just have a question? Fill out the form below, and I'll be in touch!</p>
             </div>
           </div>
           {submitted && <Alert errorMsg={error} />}
           <form onSubmit={handleSubmit}>
-            <div className="form-row">
+            <div className="form-row my-2">
               <div className="form-group col-md-6">
-                <label htmlFor="firstName">First Name</label>
-                <input type="text" className="form-control rounded-0" id="firstName" onChange={handleChange} name="firstName" value={data.firstName} required />
+                <input type="text" className="form-control rounded-0" placeholder='First Name' id="firstName" onChange={handleChange} name="firstName" value={data.firstName} required />
               </div>
               <div className="form-group col-md-6">
-                <label htmlFor="lastName">Last Name</label>
-                <input type="text" className="form-control rounded-0" id="lastName" onChange={handleChange} name="lastName" value={data.lastName} required />
+                <input type="text" className="form-control rounded-0" placeholder='Last Name' id="lastName" onChange={handleChange} name="lastName" value={data.lastName} required />
               </div>
             </div>
-            <div className="form-row">
+            <div className="form-row my-2">
               <div className="form-group col-md-6">
-                <label htmlFor="email">Email</label>
-                <input type="email" className="form-control rounded-0" id="email" onChange={handleChange} name="email" value={data.email} required />
+                <input type="email" className="form-control rounded-0" placeholder='Email' id="email" onChange={handleChange} name="email" value={data.email} required />
               </div>
               <div className="form-group col-md-6">
-                <label htmlFor="needs">How can I help you?</label>
                 <select id="inputState" className="form-control rounded-0" onChange={handleChange} name="topic" value={data.topic} required>
-                  <option defaultValue>Select a topic...</option>
-                  <option>Web Development</option>
-                  <option>Other</option>
+                  <option value="">Select a subject...</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
             </div>
-            <div className="form-row">
+            <div className="form-row my-2">
               <div className="form-group col-md-12">
-                <label htmlFor="message">Message</label>
-                <textarea className="form-control" id="message" rows="4" onChange={handleChange} name="message" value={data.message} required></textarea>
+                <textarea className="form-control rounded-0" id="message" rows="7" placeholder='Enter your message in here...' onChange={handleChange} name="message" value={data.message} required></textarea>
               </div>
             </div>
             <button type="submit" className="btn btn-primary rounded-sm">{isLoading ? "Sending..." : "Submit"}</button>
