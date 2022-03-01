@@ -11,7 +11,6 @@ body {
 
 .scroll-nav {
     background-color: #fff;
-    
     animation: fadeInDownBig;
     animation-duration: 300ms;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
@@ -115,11 +114,15 @@ body {
 }
 
 .fa-js{
-    color: #ffde00;
+    color: #ffca26;
 }
 
 .fa-cog{
     color: #4588c7;
+}
+
+.fa-npm{
+    color: #CC3534;
 }
 
 .fa-node-js{

@@ -2,17 +2,30 @@ import React from 'react';
 import logo from '../Assets/img/hex_logo.png'
 
 
-export default function Feature() {
+export default function Navbar() {
+
+    const [scrollState, setScrollState] = React.useState("");
 
     const collapse = () => {
-        let elment = document.getElementById('navbarNav')
-        elment.classList.remove("show")
+        let element = document.getElementById('navbarNav')
+        element.classList.remove("show")
     }
 
+    React.useEffect(()=> {
+        const handleScroll = (event) => {
+            const offset = event.target.documentElement.scrollTop;
+            offset < 50 ? setScrollState("") : setScrollState("scroll-nav");
+        }
+
+        window.addEventListener('scroll', handleScroll)
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    },[scrollState])
+    
     return (
         <>
             <header>
-                <nav id="navbar" className="fixed-top navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown animate__faster">
+                <nav id="navbar" className={`fixed-top navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown animate__faster ${scrollState}`}>
                     <div className="container-fluid px-4">
                         <a className="navbar-brand" href="index.html">
                             <img src={logo} width="auto" height="45" alt="code logo" />
