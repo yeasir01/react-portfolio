@@ -10,7 +10,7 @@ export default function Project() {
         img: weatherImg,
         imgDesc: "weather app",
         title: "Weather Dashboard",
-        description: `A web app used to lookup the 5 day forecast for a given city or zip code. 
+        description: `Lookup the 5 day forecast for a given city or zip code. 
         The app communicates with the the OpenWeather API and stores the recently visited searches 
         on the left panel during your browsing session. Technologies used in this project were HTML, 
         CSS, JS, BootStrap and jQuery.`,
@@ -21,10 +21,11 @@ export default function Project() {
         img: quizImg,
         imgDes: "quiz app",
         title: "Trivia Quiz",
-        description: `A simple time based trivia quiz that utilizes the power of CSS grid box. The player 
-        will be asked a series of multiple choice questions. If the player answerers incorrectly or skips 
-        ahead they will lose 15sec with no more time on the clock its game over. Answer correct and move forward. 
-        Scores are based on how quickly you answer and how much time was left on the clock.`,
+        description: `A time based trivia quiz that utilizes the power of CSS grid box. you 
+        will be asked a series of multiple choice questions. Get the right answer and move forward. 
+        If you answer incorrectly or skips 
+        ahead you will loose 15 seconds, with no more time on the clock its game over! 
+        Scores are calculated based on how quickly you can complete the challenges.`,
         liveLink: "https://yeasir01.github.io/timed-quiz/",
         repoLink: "https://github.com/yeasir01/timed-quiz",
         techStack: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"]
@@ -41,11 +42,9 @@ export default function Project() {
         imgDes: "safety guru app",
         title: "Trivia-CLI",
         description: `A game played in the command line. You'll 
-        start by setting a few parameters, then you will be presented 
-        with a set of questions. Once all questions have been answered, a table displaying the 
-        correct answers and your score will be generated. All questions are generated from the 
+        start by answering a few configuration questions, then you will be presented 
+        with a set of trivia challenges. All questions are generated from the 
         "Open Trivia API" library of more than 4000 community sourced questions.`,
-        liveLink: "https://github.com/yeasir01/trivia-cli",
         repoLink: "https://github.com/yeasir01/trivia-cli",
         techStack: ["fab fa-node-js", "fas fa-cog", "fab fa-npm"]
     }];
@@ -70,10 +69,13 @@ export default function Project() {
                                 <a href={item.repoLink}
                                     target="_blank" rel="noopener noreferrer"
                                     className="btn btn-outline-dark rounded-sm mr-2 col-sm-6 col-md-4">Repo</a>
-
-                                <a href={item.liveLink}
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="btn btn-outline-dark rounded-sm col-sm-6 col-md-4">Live</a>
+                                {
+                                    item.liveLink && (
+                                        <a href={item.liveLink}
+                                            target="_blank" rel="noopener noreferrer"
+                                            className="btn btn-outline-dark rounded-sm col-sm-6 col-md-4">Live</a>
+                                    )
+                                }
                             </div>
                         </div>
                     </div>

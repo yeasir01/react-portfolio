@@ -1,12 +1,14 @@
 import React from 'react';
 
 const Alert = ({errorMsg}) => {
-  const alertClassName = errorMsg ? "alert-danger" : "alert-success";
+  const alertTypeClasses = errorMsg ? "alert-danger" : "alert-success";
+  const iconTypeClasses = errorMsg ? "fa-times-circle": "fa-check-circle";
 
   return (
     <div className='row'>
       <div className="col-12">
-        <div className={`alert ${alertClassName}`} role="alert">
+        <div className={`alert ${alertTypeClasses} d-flex align-items-center`} role="alert">
+          <i class={`fas ${iconTypeClasses} pr-2 fa-lg`}></i>
           {errorMsg ? errorMsg : "Thank You! Your submission has been sent."}
         </div>
       </div>
@@ -84,18 +86,18 @@ export default function Contact() {
           <form onSubmit={handleSubmit}>
             <div className="form-row my-2">
               <div className="form-group col-md-6">
-                <input type="text" className="form-control rounded-0" placeholder='First Name' id="firstName" onChange={handleChange} name="firstName" value={data.firstName} required />
+                <input type="text" className="form-control rounded-1 p-3 h-100" placeholder='First Name' id="firstName" onChange={handleChange} name="firstName" value={data.firstName} required />
               </div>
               <div className="form-group col-md-6">
-                <input type="text" className="form-control rounded-0" placeholder='Last Name' id="lastName" onChange={handleChange} name="lastName" value={data.lastName} required />
+                <input type="text" className="form-control rounded-1 p-3 h-100" placeholder='Last Name' id="lastName" onChange={handleChange} name="lastName" value={data.lastName} required />
               </div>
             </div>
             <div className="form-row my-2">
               <div className="form-group col-md-6">
-                <input type="email" className="form-control rounded-0" placeholder='Email' id="email" onChange={handleChange} name="email" value={data.email} required />
+                <input type="email" className="form-control rounded-1 p-3 h-100" placeholder='Email' id="email" onChange={handleChange} name="email" value={data.email} required />
               </div>
               <div className="form-group col-md-6">
-                <select id="inputState" className="form-control rounded-0" onChange={handleChange} name="topic" value={data.topic} required>
+                <select id="inputState" className="form-control rounded-1 p-3 h-100" onChange={handleChange} name="topic" value={data.topic} required>
                   <option value="">Select a subject...</option>
                   <option value="Web Development">Web Development</option>
                   <option value="Other">Other</option>
@@ -104,10 +106,14 @@ export default function Contact() {
             </div>
             <div className="form-row my-2">
               <div className="form-group col-md-12">
-                <textarea className="form-control rounded-0" id="message" rows="7" placeholder='Enter your message in here...' onChange={handleChange} name="message" value={data.message} required></textarea>
+                <textarea className="form-control rounded-1 p-3 h-100" id="message" rows="7" placeholder='Enter your message in here...' onChange={handleChange} name="message" value={data.message} required></textarea>
               </div>
             </div>
-            <button type="submit" className="btn btn-primary rounded-sm">{isLoading ? "Sending..." : "Submit"}</button>
+            <div className="form-row mt-2">
+              <div className="form-group col-sm-12 col-md-6 col-lg-2">
+                <button type="submit" className="btn btn-outline-dark rounded-sm px-4 py-2 w-100">{isLoading ? "Sending..." : "Submit"}</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
