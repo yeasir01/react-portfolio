@@ -5,11 +5,11 @@ services:
     image: portfolio
     container_name: portfolio-site
     restart: always
+    ports:
+      - 3000:3000
     build:
       context: .
       dockerfile: dockerfile
-    ports:
-      - 3000:3000
     environment:
       NODE_ENV: production
       
