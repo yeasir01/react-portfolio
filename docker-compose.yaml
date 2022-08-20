@@ -2,7 +2,9 @@ version: "3.8"
 
 services:
   portfolio-site:
+    image: portfolio
     container_name: portfolio-site
+    restart: always
     build:
       context: .
       dockerfile: dockerfile
@@ -10,5 +12,7 @@ services:
       - 3000:80
     environment:
       NODE_ENV: production
-    networks:
-      - host
+      
+networks:
+  default:
+    name: proxy-network
