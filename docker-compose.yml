@@ -16,4 +16,6 @@ services:
       dockerfile: dockerfile
     environment:
       NODE_ENV: production
+    networks:
+      - public
       
