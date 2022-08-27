@@ -1,10 +1,14 @@
 version: "3.8"
 
+networks:
+  public:
+    external: true
+
 services:
   portfolio-site:
     image: portfolio
-    container_name: portfolio-site
-    restart: always
+    container_name: portfolio
+    restart: unless-stopped
     ports:
       - 3000:3000
     build:
@@ -13,6 +17,3 @@ services:
     environment:
       NODE_ENV: production
       
-networks:
-  default:
-    name: proxy-network
