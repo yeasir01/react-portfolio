@@ -1,0 +1,20 @@
+version: "3.9"
+
+networks:
+  proxy:
+    external: true
+
+services:
+  portfolio-site:
+    image: "github.com/yeasir01/react-portfolio:latest"
+    container_name: portfolio
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    networks:
+      - proxy
