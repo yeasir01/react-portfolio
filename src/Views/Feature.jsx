@@ -7,7 +7,7 @@ export default function Feature() {
             <div className="container-fluid pr-0 overflow-hidden">
                 <div className="row min-vh-100">
                     <div className="col-md-6 col-sm-12 my-auto">
-                        <div className="landing-content text-center animate__animated animate__fadeInLeft">
+                        <div className="landing-content text-center animate__animated animate__fadeIn">
                             <p className="text-uppercase mb-1">Hey there!</p>
                             <h2 className="text-uppercase mb-1">I'm yeasir</h2>
                             <p className="text-uppercase mb-4">A Full Stack Web Developer</p>
@@ -17,7 +17,8 @@ export default function Feature() {
                     </div>
                     <div className="col-md-6 text-right my-auto pt-5 d-none d-md-block">
                         <img src={Laptop} alt="laptop with vs code displayed"
-                            className="feature-img img-fluid py-4 animate__animated animate__fadeInRight" />
+                            
+                            className="feature-img img-fluid py-4 animate__animated animate__fadeIn" />
                     </div>
                 </div>
             </div>

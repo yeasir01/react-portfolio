@@ -86,6 +86,17 @@ body {
     margin-right: 15px;
     color: #95a5a6;
 }
+.fa-database {
+    color: #7e7e7e;
+}
+
+.fa-bolt {
+    color:#000000;
+}
+
+.fa-react {
+    color:#08d9ff;
+}
 
 .fa-stack-overflow {
     color: #EF8236;

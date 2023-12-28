@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function About() {
     return (
@@ -13,26 +13,48 @@ export default function About() {
                             </div>
                         </div>
 
-                        <div
-                            className="col-lg-9 col-md-8 col-sm-12 my-auto text-center text-md-left text-lg-left border-left pl-4">
-                            <p>Technology has always been an integral part of my life and has served as a personal passion
-                                of mine. As a child, I would always
-                                take things apart and attempt to put them back together (sometimes unsuccessfully) - in
-                                order to better understand the technology, architecture and engineering behind the product.
-                                Those experiences fueled my interest in computer hardware and software. Throughout my
-                                teenage and early adult years, I became more proficient in knowing how to build, customize
-                                and repair computers and laptops. As I have progressed in my professional life, I have
-                                adapted those skills to other technologies, which I now use to grow and scale my businesses.
-                                I am now focusing on learning code, so that I may use those skills to develop custom
-                                software and applications that could be used for my current and future business
-                                opportunities.</p>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/yeasir01">
+                        <div className="col-lg-9 col-md-8 col-sm-12 my-auto text-center text-md-left text-lg-left border-left pl-4">
+                            <p>
+                                Greetings, I'm Yeasir, a seasoned
+                                enthusiast with an enduring passion for
+                                technology. From my early days of dismantling
+                                and reconstructing gadgets, I cultivated a
+                                profound understanding of technology,
+                                architecture, and engineering. Progressing from
+                                hardware intricacies to adeptly building and
+                                customizing computers, I seamlessly integrated
+                                technology into my professional life. Now, as a
+                                dedicated full-stack web developer, I'm on a
+                                deliberate journey to master coding for the
+                                creation of customized software solutions. This
+                                formal foray into coding is more than a skill
+                                acquisition—it's a strategic move to leverage
+                                technology for innovation and growth. Join me on
+                                this transformative odyssey as we pioneer the
+                                future through the language of code.
+                            </p>
+                            <a
+                                aria-label="Github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/yeasir01"
+                            >
                                 <i className="fab fa-github so-icon"></i>
                             </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yeasirhugais/">
+                            <a
+                                aria-label="Linkedin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/yeasirhugais/"
+                            >
                                 <i className="fab fa-linkedin so-icon"></i>
                             </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/12330004/yeasir01">
+                            <a
+                                aria-label="Stack Overflow"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://stackoverflow.com/users/12330004/yeasir01"
+                            >
                                 <i className="fab fa-stack-overflow so-icon"></i>
                             </a>
                         </div>
@@ -41,4 +63,4 @@ export default function About() {
             </div>
         </>
     );
-};
+}
