@@ -1,18 +1,34 @@
-FROM node:latest AS build-stage
+FROM node:latest AS build
 
+# Set working directory
 WORKDIR /app
 
-COPY package*.json /app/
+# Copy package.json
+COPY package*.json .
 
+# Install packages
 RUN npm install
 
-COPY . /app/
+# Copy all files
+COPY . .
 
+# Run build command for react
 RUN npm run build
 
-FROM nginx:stable-alpine
+# Nginx
+FROM nginx:stable
 
-COPY --from=build-stage /app/build /usr/share/nginx/html
-COPY --from=build-stage /app/config/nginx.conf /etc/nginx/conf.d/default.conf
+# Copy config nginx
+COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
-CMD ["nginx", "-g", "daemon off;"]
+# Change work directory
+WORKDIR /usr/share/nginx/html
+
+# Remove default nginx static assets
+RUN rm -rf ./*
+
+# Copy static assets from builder stage
+COPY --from=build /app/build .
+
+# Containers run nginx with global directives and daemon off
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

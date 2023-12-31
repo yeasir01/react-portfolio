@@ -1,20 +1,19 @@
-version: "3.9"
+version: "3.8"
+
+services:
+  client:
+    container_name: portfolio
+    build:
+      context: .
+      dockerfile: dockerfile
+      args:
+        - GENERATE_SOURCEMAP=false
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    networks:
+      - proxy
 
 networks:
   proxy:
     external: true
-
-services:
-  portfolio-site:
-    image: "github.com/yeasir01/react-portfolio:latest"
-    container_name: portfolio
-    restart: unless-stopped
-    ports:
-      - 3000:3000
-    build:
-      context: .
-      dockerfile: dockerfile
-    environment:
-      NODE_ENV: production
-    networks:
-      - proxy
